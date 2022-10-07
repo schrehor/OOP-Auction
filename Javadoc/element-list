@@ -1,0 +1,11 @@
+module:com.stanrehor.oop
+com.stanrehor.oop
+com.stanrehor.oop.controller
+com.stanrehor.oop.exception
+com.stanrehor.oop.model
+com.stanrehor.oop.model.characters
+com.stanrehor.oop.model.items
+com.stanrehor.oop.model.items.armor
+com.stanrehor.oop.model.items.consumables
+com.stanrehor.oop.model.items.miscellaneous
+test

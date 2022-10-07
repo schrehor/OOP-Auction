@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="495.0" prefWidth="861.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stanrehor.oop.controller.AuctionController">
+   <children>
+      <Label layoutX="186.0" layoutY="26.0" text="Inventar" />
+      <Label layoutX="605.0" layoutY="26.0" text="Aukcia" />
+      <TableView fx:id="tableInventory" layoutX="33.0" layoutY="58.0" prefHeight="305.0" prefWidth="349.0">
+        <columns>
+          <TableColumn fx:id="nameInv" prefWidth="143.0" text="Názov" />
+          <TableColumn fx:id="levelInv" prefWidth="54.0" text="Level" />
+            <TableColumn fx:id="descInv" prefWidth="151.0" text="Description" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableAuction" layoutX="414.0" layoutY="58.0" prefHeight="305.0" prefWidth="417.0">
+         <columns>
+            <TableColumn fx:id="nameAuc" prefWidth="143.0" text="Názov" />
+            <TableColumn fx:id="levelAuc" prefWidth="54.0" text="Level" />
+            <TableColumn fx:id="descAuc" prefWidth="165.0" text="Description" />
+            <TableColumn fx:id="price" prefWidth="54.0" text="Cena" />
+         </columns>
+      </TableView>
+      <Button layoutX="33.0" layoutY="385.0" mnemonicParsing="false" onAction="#sellItem" text="Sell" />
+      <Button layoutX="414.0" layoutY="385.0" mnemonicParsing="false" onAction="#buyItem" text="Buy" />
+      <TextField fx:id="priceField" layoutX="81.0" layoutY="385.0" promptText="Set price of items" />
+      <Label layoutX="37.0" layoutY="430.0" prefHeight="17.0" prefWidth="44.0" text="Goldy:" />
+      <Label fx:id="charGold" layoutX="74.0" layoutY="430.0" />
+      <Button layoutX="779.0" layoutY="447.0" mnemonicParsing="false" onAction="#saveCharacter" text="Save" />
+   </children>
+</AnchorPane>
